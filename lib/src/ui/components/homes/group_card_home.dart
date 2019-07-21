@@ -120,7 +120,7 @@ class _GroupCardState extends State<GroupCardHome> {
                           ),
                         ),
                         Container(
-                          width: 160,
+                          width: 170,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -29,7 +29,13 @@ class _ListHorizontalGroupCardState extends State<ListHorizontalGroupCard> {
           Container(
             height: 20,
             child: FlatButton(
-              child: Text("Show all"),
+              child: Text(
+                "View all",
+                style: TextStyle(
+                  color: Color(0xFF666E80),
+                  fontSize: 13
+                ),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
