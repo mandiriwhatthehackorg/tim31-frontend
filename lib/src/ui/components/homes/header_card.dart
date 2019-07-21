@@ -26,6 +26,7 @@ class _HeaderCardState extends State<HeaderCard> {
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                   Container(
                     width: 40,
@@ -35,7 +36,13 @@ class _HeaderCardState extends State<HeaderCard> {
                       borderRadius: BorderRadius.all(Radius.circular(4))
                     ),
                   ),
-                  Text("Total Balance"),
+                  Text(
+                    "Total Balance",
+                    style: TextStyle(
+                      color: Color(0xFFACB2BF),
+                      fontSize: 16
+                    ),
+                  ),
                   Image.asset(
                     "assets/images/visa.png",
                     height: 30,
@@ -50,12 +57,30 @@ class _HeaderCardState extends State<HeaderCard> {
                   fontSize: 27,
                 ),
               ),
-              Text("1234 1234 1234 1234"),
+              Text(
+                "**** **** **** 6108",
+                style: TextStyle(
+                  color: Color(0xFFACB2BF),
+                  fontSize: 16
+                ),
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text("Eko Simanjuntak"),
-                  Text("08/23")
+                  Text(
+                    "Eko Simanjuntak",
+                    style: TextStyle(
+                      color: Color(0xFFACB2BF),
+                      fontSize: 16
+                    )
+                  ),
+                  Text(
+                    "08 / 23",
+                    style: TextStyle(
+                      color: Color(0xFFACB2BF),
+                      fontSize: 16
+                    ),
+                  )
                 ],
               )
             ],
