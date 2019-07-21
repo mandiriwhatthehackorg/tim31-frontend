@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person), title: new Text('Profile'))
         ],
-        fixedColor: AsphaltColor.blue50,
+        fixedColor: Color(0xFF003D79),
         unselectedItemColor: AsphaltColor.black50,
         onTap: _onItemTapped,
 
