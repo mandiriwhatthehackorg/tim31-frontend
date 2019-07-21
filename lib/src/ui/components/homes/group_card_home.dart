@@ -3,11 +3,11 @@ import 'package:hepengta/src/models/group_card_data.dart';
 import 'package:hepengta/src/ui/pages/group_detail_page.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
-class GroupCard extends StatefulWidget {
+class GroupCardHome extends StatefulWidget {
   GroupCardData data;
   Color color;
-  
-  GroupCard({@required this.data, this.color});
+
+  GroupCardHome({@required this.data, this.color});
 
   @override
   State<StatefulWidget> createState() {
@@ -15,7 +15,7 @@ class GroupCard extends StatefulWidget {
   }
 }
 
-class _GroupCardState extends State<GroupCard> {
+class _GroupCardState extends State<GroupCardHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -120,7 +120,7 @@ class _GroupCardState extends State<GroupCard> {
                           ),
                         ),
                         Container(
-                          width: 220,
+                          width: 160,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -183,7 +183,7 @@ class _GroupCardState extends State<GroupCard> {
     for(int i=amount.length-1; i >= 0 ; i--) {
       counter++;
       if(counter == 3 && i != 0) {
-        result += amount[i] + ",";
+        result += amount[i] + ".";
         counter = 0;
       } else {
         result += amount[i];

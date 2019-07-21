@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hepengta/src/resources/group_api.dart';
+import 'package:hepengta/src/ui/components/homes/group_card_home.dart';
 import 'package:hepengta/src/ui/fondation/colors.dart';
 import 'package:hepengta/src/ui/pages/all_group_page.dart';
-import 'group_card.dart';
 import 'no_group_card.dart';
 
 class ListHorizontalGroupCard extends StatefulWidget {
@@ -50,7 +50,7 @@ class _ListHorizontalGroupCardState extends State<ListHorizontalGroupCard> {
                       itemCount: snapshot.data.length,
                       itemBuilder: (context, index) {
                         int idx = colors.length % 2;
-                        return GroupCard(data: snapshot.data[index], color: AsphaltColor.orange50);
+                        return GroupCardHome(data: snapshot.data[index], color: AsphaltColor.orange50);
                       },
                     );
                   } else {

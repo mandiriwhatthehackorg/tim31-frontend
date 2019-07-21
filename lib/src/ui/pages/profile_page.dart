@@ -11,8 +11,20 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
-        child: Text("Profile Page"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset("assets/images/no_group.png"),
+            Text(
+              "Coming Soon",
+              style: TextStyle(
+                fontSize: 20
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

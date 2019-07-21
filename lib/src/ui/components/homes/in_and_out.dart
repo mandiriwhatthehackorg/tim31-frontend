@@ -96,30 +96,7 @@ class _InOutState extends State<InOutList> {
     for(var i = 0; i < histories.length; i++){
       list.add(HistoryTile(history: histories[i]));
     }
-  
-    list.add(Divider());
-    list.add(
-      Container(
-        width: 300,
-        height: 45,
-        decoration: BoxDecoration(
-          border: Border.all(color: AsphaltColor.blue40),
-          borderRadius: BorderRadius.all(Radius.circular(2))
-        ),
-        child: FlatButton(
-          child: Text(
-            "View All",
-            style: TextStyle(
-              color: AsphaltColor.blue40
-            ),
-          ),
-          onPressed: () {
-          
-          },
-        ),
-      )
-    );
-  
+    
     return list;
   }
 }
